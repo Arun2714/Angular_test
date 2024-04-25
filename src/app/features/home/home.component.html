@@ -1,0 +1,22 @@
+<!-- <h1> this is my homepage as well as task 3 </h1>
+<h1>below values are given to us to render in browser in task 2 </h1>
+<p> name :{{name}}</p>
+<p> age : {{age}}</p>
+<p> month :{{month}} </p>
+<p>names :{{names}} </p>
+<p> empCodes:{{empCodes}} </p>
+<p>employees:{{employees}}</p>
+<p> isActive:{{isActive}}</p>
+<p> <button> testFunction() </button></p>
+ -->
+
+
+<div class="container">
+    <h1 class="text-center mb-5">Contact Details</h1>
+    <div *ngIf="contactData">
+      <p>Name: {{ contactData.name }}</p>
+      <p>Email: {{ contactData.email }}</p>
+      <p>Subject: {{ contactData.subject }}</p>
+      <p>Message: {{ contactData.message }}</p>
+    </div>
+  </div>
